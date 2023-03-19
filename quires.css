@@ -1,0 +1,46 @@
+@media (min-width: 950px) and (max-width: 11500px) {
+  .content .image img {
+    width: 330px;
+  }
+}
+
+@media (max-width: 950px) {
+  .content,
+  nav {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .content .image,
+  .content .text {
+    width: 80%;
+  }
+  .content .text p {
+    gap: 10px;
+  }
+  body::after {
+    clip-path: circle(50% at bottom);
+  }
+}
+
+@media (max-width: 600px) {
+  .content .image,
+  .content .text {
+    width: 40%;
+  }
+  .content .image img {
+    width: 180px;
+    justify-content: center;
+    align-items: center;
+  }
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .content .text {
+    width: 100%;
+    margin-bottom: 100px;
+    justify-content: center;
+  }
+}
